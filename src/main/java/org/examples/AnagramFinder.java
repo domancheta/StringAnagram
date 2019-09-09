@@ -18,7 +18,6 @@ public class AnagramFinder {
 		List<String> validWords = new ArrayList<String>();
 	
 		// use borrowed algorithm to generate all possible words for a string
-	
 		HashMap <String, String> allWords = new WordExtruder().getWordsNew(theWord);
 
 		// find all matching words in the dictionary

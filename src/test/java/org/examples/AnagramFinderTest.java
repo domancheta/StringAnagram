@@ -33,7 +33,7 @@ public class AnagramFinderTest {
 	@Test
 	public void verifyDictionaryMatchMethodInvocations() {
 		finder.findWords("working");
-		verify(dictionaryMock, times(391909)).isEnglishWord("working");
+		verify(dictionaryMock, times(13699)).isEnglishWord("working");
 		//assertEquals(0, dictionaryMock.size());
 	}
 	

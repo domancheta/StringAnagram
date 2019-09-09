@@ -4,8 +4,7 @@ import java.util.HashMap;
 
 // borrowed and converted from javascript
 // from https://stackoverflow.com/questions/2439412/algorithm-to-generate-all-possible-letter-combinations-of-given-string-down-to-2/13717469#13717469https://stackoverflow.com/questions/2439412/algorithm-to-generate-all-possible-letter-combinations-of-given-string-down-to-2/2439952#2439952
-// buggy at the moment.  invalid words are generated.  
-// For string 'working' - 13699 words generated in js version.  391909 words in java version :/
+
 public class WordExtruder {
 	  HashMap<String, String> result = new HashMap<String, String>();
 		
@@ -37,11 +36,12 @@ public class WordExtruder {
 		  }
 		  
 		  for (i = 0; i < l; i++) {
-			  if (used.indexOf("" + i) < 0)
+			  if (used.indexOf("" + i) < 0) {
 	              result.put(key + a[i], "");
 	              nextLetter (a, l, key + a[i], used + i);
 	          }
 		  }
+      }
 		  
 
 	  public static void main (String args[]) {
