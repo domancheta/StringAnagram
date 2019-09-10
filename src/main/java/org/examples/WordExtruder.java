@@ -12,7 +12,6 @@ public class WordExtruder {
 		
 	    String[] a;  
 		int  i, l; 
-		
 	    
 	    a = masterword.split("");
 	    l = a.length;
@@ -46,7 +45,7 @@ public class WordExtruder {
 
 	  public static void main (String args[]) {
 	    WordExtruder w = new WordExtruder();
-	    HashMap <String, String> wordcombos = w.getWordsNew(args[1]);
+	    HashMap <String, String> wordcombos = w.getWordsNew(args[0]);
 	    
 	    //System.out.println(wordcombos.size());
 		for (String key : wordcombos.keySet()) {
